@@ -3,7 +3,7 @@
 """
 Created on Fri Dec 16 16:01:47 2022
 
-@author: aliciaglenda
+@author: yuan
 """
 
 from qutip import *
