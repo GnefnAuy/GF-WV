@@ -70,7 +70,7 @@ def Sampling(RDN, N, pointer_final, up, down, up_x, down_x, up_y, down_y):
     return PR_x, PR_y, PR_z
 
 
-def MDresult(g,xi,yi,zi, MX, MY, MZ):
+def MeasuredResult(g,xi,yi,zi, MX, MY, MZ):
     xf, yf, zf = MX, MY, MZ
     IM=(yf-yi)/(2*g*(1-yi*yi))
     RM=(zf-zi+2*g*IM*zi*yi)/(-2*g*xi)
