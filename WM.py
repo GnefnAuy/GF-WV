@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Nov  5 13:52:23 2022
-
-@author: yuan
-"""
-
 import matplotlib as mpl
 from matplotlib import cm
 import matplotlib.pyplot as plt
