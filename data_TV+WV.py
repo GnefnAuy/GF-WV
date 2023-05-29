@@ -1,13 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Dec 15 16:14:26 2022
-
-@author: yuan
-"""
-
-
-
 from qutip import *
 import numpy as np
 from WM import OperatorA, TrueValue, Point_Final, WeakValue
