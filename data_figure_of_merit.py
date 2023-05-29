@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Dec 16 16:01:47 2022
-
-@author: yuan
-"""
-
 from qutip import *
 import numpy as np
 import pandas as pd
