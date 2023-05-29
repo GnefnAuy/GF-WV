@@ -3,7 +3,7 @@
 """
 Created on Sat Nov  5 13:52:23 2022
 
-@author: aliciaglen
+@author: yuan
 """
 
 import matplotlib as mpl
