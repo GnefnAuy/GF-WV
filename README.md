@@ -11,7 +11,7 @@ Our proposal in quantum mechanics is exemplified by the perturbed quantum harmon
 
 The simulations presented in are idealized, assuming perfect estimations of the expectation values $\langle\hat{\sigma_i}\rangle_f$, i.e.,  requiring infinite copies of the final state. The relevant source codes are included in the file named <QM-Ideal Simulation_g>.
 ![QM scheme: Practical Simulation](https://github.com/GnefnAuy/GF-WV/blob/main/Fig2.png)
-https://github.com/GnefnAuy/GF-WV/blob/main/Fig2.png
+
 In practical implementations, the accuracy of our readout depends on both the coupling strength and the number of available copies. The relevant source codes are included in the file named <QM-Practical Simulation_gNM>. The detailed treatment of trade-off between $g$ and $N$ is given in <data_figure_of_merit.py>, where the final result could be summarized as follows:
 ![Trade-off details](https://github.com/GnefnAuy/GF-WV/blob/main/FigS3.png)
 
