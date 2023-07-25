@@ -3,7 +3,7 @@
 Source codes for our latest work on Weak-Valued Correlation Functions: https://arxiv.org/abs/2306.04398.
 
 ![Schematic diagram of (a) correlation function with the GellMann and Low Theorem, (b) weak-valued
-correlation function..](https://github.com/GnefnAuy/GF-WV/main/Fig0.png)
+correlation function.](Fig0.png "Fig0.png")
 By employing TSVF to accelerate the adiabatic evolution contained in the Gell-Mann and Low theorem, we establish an equivalent theory where correlation function is interpreted as weak values.
 
 Our proposal in quantum mechanics is exemplified by the perturbed quantum harmonic oscillator (PQHO). 
