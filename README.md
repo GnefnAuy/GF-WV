@@ -1,6 +1,6 @@
 # Weak-Valued Correlation Functions
 
-Source codes for our latest work on Weak-Valued Correlation Functions: https://arxiv.org/abs/2306.04398.
+Source codes for our latest work on Weak-Valued Correlation Functions: [arXiv:2306.04398](https://doi.org/10.48550/arXiv.2306.04398).
 ![Schematic diagram of (a) correlation function with the GellMann and Low Theorem, (b) weak-valued
 correlation function.](https://github.com/GnefnAuy/GF-WV/blob/main/Fig0.png)
 
