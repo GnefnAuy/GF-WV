@@ -1,6 +1,6 @@
-# Weak-Valued Correlation Functions
+# Weak-Valued Correlation Function
 
-Source codes for our latest work on Weak-Valued Correlation Functions: [arXiv:2306.04398](https://doi.org/10.48550/arXiv.2306.04398).
+Source codes for our latest work on Weak-Valued Correlation Function: [arXiv:2306.04398](https://doi.org/10.48550/arXiv.2306.04398).
 
 Our proposal in quantum mechanics is exemplified by the perturbed quantum harmonic oscillator (PQHO). 
 ![QM scheme: Idealized Simulation](https://github.com/GnefnAuy/GF-WV/blob/main/Relevant%20Figures/Fig1.png)
