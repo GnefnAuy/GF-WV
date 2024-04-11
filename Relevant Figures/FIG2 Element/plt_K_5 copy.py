@@ -53,7 +53,7 @@ Trafdata = DataFrame(data, columns=['Re','Im','g_merit'])
 
 sns.set(style="darkgrid") 
 pal2 = sns.color_palette("rainbow", as_cmap=True)
-sns.set_context("poster", font_scale = 0.8225 , rc={"grid.linewidth": 5})
+sns.set_context("poster", font_scale = 0.9 , rc={"grid.linewidth": 5})
 g = sns.JointGrid(x='Re', y='Im', data= Trafdata, 
               hue='g_merit',
               #kind="kde",

@@ -17,7 +17,7 @@ mpl.rcParams['mathtext.default']='it'
 mpl.rcParams['mathtext.bf']= 'sans:bold'
 
 sns.set(style="darkgrid")
-sns.set_context("poster", font_scale = 0.4 , rc={"grid.linewidth": 2})
+sns.set_context("poster", font_scale = 0.38 , rc={"grid.linewidth": 2})
 #PREVIOUS FONTSIZE=0.34
 #import
 TV = np.load("TV.npy")

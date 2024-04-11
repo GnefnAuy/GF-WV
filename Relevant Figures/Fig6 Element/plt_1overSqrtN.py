@@ -11,14 +11,12 @@ from matplotlib import cm
 import matplotlib.pyplot as plt
 from qutip import *
 import numpy as np
-from matplotlib.colors import LinearSegmentedColormap
 import seaborn as sns  
-import matplotlib.ticker as ticker
 
-N_index=np.load("N_index.npy")
+N_index=np.load("N_index.npy")/1000
 DN = len(N_index)
 CC = np.load("CC.npy")
-DD = np.load("DD.npy")    
+DD = np.load("DD.npy") /1000
 
 clis = plt.cm.rainbow_r(np.linspace(0,1,10))
 
@@ -26,16 +24,6 @@ fig,ax=plt.subplots( 1, 1, figsize=(4, 2.5), sharey=False, sharex=False)
 sns.set(style="darkgrid") 
 sns.set_context("poster", font_scale = 3/4 , rc={"grid.linewidth": 3})
 
-formatter = ticker.ScalarFormatter(useMathText=True)
-formatter.set_scientific(True)
-formatter.set_powerlimits((-3,3)) 
-ax.xaxis.set_major_formatter(formatter)
-ax.yaxis.set_major_formatter(formatter)
-
-#ax.tick_params(axis='y', labelrotation=90)
-ax.yaxis.offsetText.set_fontsize(0)
-ax.xaxis.offsetText.set_fontsize(0)
-#offset_text.set_visible(False)
 
 plt.scatter(N_index, DD[0,:], s=10, color = clis[0,:],marker='*' )
 plt.scatter(N_index, DD[1,:], s=10, color = clis[1,:],  marker='x' )
@@ -47,13 +35,13 @@ plt.scatter(N_index, DD[6,:], s=10, color=clis[6,:],  marker='d' )
 plt.scatter(N_index, DD[7,:], s=10, color=clis[7,:], marker='<' )
 plt.scatter(N_index, DD[8,:], s=10, color=clis[8,:], marker='p' )
 plt.scatter(N_index, DD[9,:], s=10, color=clis[9,:],  marker='1' ) 
-ax.set_xlabel('N' + r' ($\times 10^{}$)'.format(int(np.log10(np.max(N_index)))))
-ax.set_ylabel('$1/\delta^2$' + r' ($\times 10^{}$)'.format(int(np.log10(np.max(N_index)))))
+#ax.set_xlabel('N' + r' ($\times 10^{}$)'.format(int(np.log10(np.max(N_index)))))
+#ax.set_ylabel('$1/\delta^2$' + r' ($\times 10^{}$)'.format(int(np.log10(np.max(N_index)))))
 
 #plt.yticks([0,1000, 2000 ])#C
 #plt.yticks([0,1000, 2000 ,3000])#|C|
 #plt.yticks([0,4000, 8000])#A
-plt.xticks([0, 2000, 4000])
+#plt.xticks([0, 2000, 4000])
 #plt.xlabel('N')
 #plt.ylabel('$1/\delta^2$')
 #plt.legend(loc='best', ncol=1, prop = {'size':7}, frameon=False)

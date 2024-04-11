@@ -16,29 +16,18 @@ from matplotlib.colors import LinearSegmentedColormap
 import seaborn as sns  
 import matplotlib.ticker as ticker
 
-N_index=np.load("N_index.npy")
+N_index=np.load("N_index.npy")/1000
 DN = len(N_index)
 CC = np.load("CC.npy")
 DD = np.load("DD.npy")    
-
 D = np.load("D.npy")
+
 C = abs(CC) #AB
 clis = plt.cm.rainbow_r(np.linspace(0,1,10))
 
 fig,ax=plt.subplots( 1, 1, figsize=(4, 2.5), sharey=False, sharex=False)
 sns.set(style="darkgrid") 
 
-'''
-formatter = ticker.ScalarFormatter(useMathText=True)
-formatter.set_scientific(True)
-formatter.set_powerlimits((-3,3)) 
-ax.yaxis.set_major_formatter(formatter)
-ax.xaxis.set_major_formatter(formatter)
-
-#ax.yaxis.offsetText.set_fontsize(0)
-#ax.xaxis.offsetText.set_fontsize(0)
-
-'''
 
 plt.errorbar(N_index, C[9,:], xerr=None, yerr=D[9,:],capsize=2,fmt='.', label='g=0.1', color = clis[9,:])
 plt.errorbar(N_index, C[8,:], xerr=None, yerr=D[8,:],capsize=2,fmt='.', label='g=0.2', color = clis[8,:])
