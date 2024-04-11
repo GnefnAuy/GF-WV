@@ -37,6 +37,19 @@ clis = plt.cm.rainbow_r(np.linspace(0,1,10))
 fig,axs=plt.subplots( 2, 4, figsize=(6.772, 1.7), sharey=False, sharex=False)#,layout='constrained')#,gridspec_kw={'height_ratios': [1, 1, 1, 0.12]})
 plt.subplots_adjust(hspace=0.9,wspace=0.5)
 
+axs[0,0].errorbar(N_index, RL_AVE[0,9,:], xerr=None, yerr=Delta_[0,9,:],capsize=0.6,fmt='.', label='g=0.1', color = clis[9,:],ms=2, mew=0.2,elinewidth=0.5)
+axs[0,0].errorbar(N_index, RL_AVE[0,8,:], xerr=None, yerr=Delta_[0,8,:],capsize=0.6,fmt='.', label='g=0.2', color = clis[8,:],ms=2, mew=0.2,elinewidth=0.5)
+axs[0,0].errorbar(N_index, RL_AVE[0,7,:], xerr=None, yerr=Delta_[0,7,:],capsize=0.6,fmt='.', label='g=0.3', color = clis[7,:],ms=2, mew=0.2,elinewidth=0.5)
+axs[0,0].errorbar(N_index, RL_AVE[0,6,:], xerr=None, yerr=Delta_[0,6,:],capsize=0.6,fmt='.', label='g=0.4', color = clis[6,:],ms=2, mew=0.2,elinewidth=0.5)
+axs[0,0].errorbar(N_index, RL_AVE[0,5,:], xerr=None, yerr=Delta_[0,5,:],capsize=0.6,fmt='.', label='g=0.5', color = clis[5,:],ms=2, mew=0.2,elinewidth=0.5)
+axs[0,0].errorbar(N_index, RL_AVE[0,4,:], xerr=None, yerr=Delta_[0,4,:],capsize=0.6,fmt='.', label='g=0.6', color = clis[4,:],ms=2, mew=0.2,elinewidth=0.5)
+axs[0,0].errorbar(N_index, RL_AVE[0,3,:], xerr=None, yerr=Delta_[0,3,:],capsize=0.6,fmt='.', label='g=0.7', color = clis[3,:],ms=2, mew=0.2,elinewidth=0.5)
+axs[0,0].errorbar(N_index, RL_AVE[0,2,:], xerr=None, yerr=Delta_[0,2,:],capsize=0.6,fmt='.', label='g=0.8', color = clis[2,:],ms=2, mew=0.2,elinewidth=0.5)
+axs[0,0].errorbar(N_index, RL_AVE[0,1,:], xerr=None, yerr=Delta_[0,1,:],capsize=0.6,fmt='.', label='g=0.9', color = clis[1,:],ms=2, mew=0.2,elinewidth=0.5)
+axs[0,0].errorbar(N_index, RL_AVE[0,0,:], xerr=None, yerr=Delta_[0,0,:],capsize=0.6,fmt='.', label='g=1', color = clis[0,:],ms=2, mew=0.2,elinewidth=0.5)
+axs[0,0].set_title('(a)  $Z_{\mathrm{RV}}$')
+axs[0,0].set(xlabel='$10^3~N$', ylabel='$\overline{Z}$',ylim=(-1,1.3))
+
 axs[1,0].scatter(N_index, RL_DEV[0,0,:], s=5, linewidth=0.1, color = clis[0,:],marker='*' )
 axs[1,0].scatter(N_index, RL_DEV[0,1,:], s=5, linewidth=0.3, color = clis[1,:],  marker='x' )
 axs[1,0].scatter(N_index, RL_DEV[0,2,:], s=5, linewidth=0.1, color = clis[2,:], marker='^' )
@@ -98,3 +111,9 @@ cbar=fig.colorbar(mpl.cm.ScalarMappable(norm=norm, cmap=cmap), ax=axs[:], pad=0.
 cbar.ax.tick_params(width=0.5,length=3)
 plt.savefig('Fig6.png',dpi=400,bbox_inches ='tight')
 plt.show()
+#scatter(s,linewidth)
+#error(ms=20, mew=4) 
+#ax.set_title(loc='center')
+
+# ave & Delta *1
+# Dev/1000 
